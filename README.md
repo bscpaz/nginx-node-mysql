@@ -29,6 +29,10 @@ create table tb_users (
 );
 ```
 
+#### Insert data (DML):
+```console
+INSERT INTO tb_users (nm_user) VALUES ('Bruno Paz');
+```
 <hr>
 
 #### known issues:
