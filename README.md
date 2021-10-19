@@ -1,8 +1,8 @@
-<h1 align="center">Environment with Nginx, Node and MySql database</h1>
+<h1 align="center">Environment with Nginx, NodeJS and MySql database</h1>
 <p align="center">This is the second challenger of FullCycle course - Docker module</p>
 
 ### Objective:
-<p>Create a docker-compose file that has 3 services: nginx, node and MySql database. <br>Then expose only nginx and make node to save and retrieve data from database.</p>
+<p>Create a docker-compose file that has 3 services: Nginx, NodeJS and MySql database. <br>Then expose only Nginx and make NodeJS to save and retrieve data from database.</p>
 
 #### How to use the image:
 ```console
@@ -23,7 +23,12 @@ root@db:/$ mysql -u root
 ```
 Issue: 
   "Can't change permissions of the file 'ca-key.pem'"
-
 Solution: 
-  Use a Linux volume (inside WSL2 or "\\wsl$") instad of a Windows volume
+  Use a Linux volume (inside WSL2 or "\\wsl$") instead of a Windows volume
+```
+```
+Issue: 
+  "mysql -u root" generates "Access denied for user 'root'@'localhost' (using password: NO)"
+Solution: 
+  .
 ```
