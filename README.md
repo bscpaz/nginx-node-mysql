@@ -4,6 +4,8 @@
 ### Objective:
 <p>Create a docker-compose file that has 3 services: Nginx, NodeJS and MySql database. <br>Then expose only Nginx and make NodeJS to save and retrieve data from database.</p>
 
+![image](https://user-images.githubusercontent.com/9732874/137987270-950606b2-85d4-41f2-9ec5-30c36ca5df35.png)
+
 #### How to use the image:
 ```console
 bscpaz@2am:/$ docker-compose up -d --build
@@ -20,6 +22,7 @@ mysql> show databases; --Show all databases.
 mysql> use <database-name>; --Connect to a database.
 mysql> show tables; --Show all tables from a database.
 mysql> desc <table-name>; --Show de structure of a table. 
+mysql> exit --Leave the MySql terminal.
 ```
 #### Create Table DDL:
 ```console
