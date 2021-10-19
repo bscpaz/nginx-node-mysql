@@ -9,6 +9,13 @@
 bscpaz@2am:/$ docker-compose up -d --build
 ```
 
+#### How to connect into database:
+```console
+bscpaz@2am:/$ docker exec -it db bash
+root@db:/$ mysql -u root
+```
+
+
 <hr>
 
 #### known issues:
