@@ -14,6 +14,12 @@ bscpaz@2am:/$ docker-compose up -d --build
 bscpaz@2am:/$ docker exec -it db bash
 root@db:/$ mysql -u root -p
 ```
+#### Some utils MySql's commands:
+```console
+mysql> show databases; --Show all databases
+mysql> use <database-name>; --Connect to a database
+mysql> show tables; --Show all tables from a database
+```
 
 
 <hr>
