@@ -2,7 +2,7 @@
 <p align="center">This is the second challenger of FullCycle course - Docker module</p>
 
 ### Objective:
-<p>Create a docker-compose file that has 3 services: Nginx, NodeJS and MySql database. <br>Then expose only Nginx and make NodeJS to save and retrieve data from database.</p>
+<p>Create a docker-compose file that has 3 services: Nginx, NodeJS and MySql database. Then expose only Nginx and make NodeJS to save and retrieve data from database.</p>
 
 ![image](https://user-images.githubusercontent.com/9732874/137987270-950606b2-85d4-41f2-9ec5-30c36ca5df35.png)
 
