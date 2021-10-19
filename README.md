@@ -16,11 +16,18 @@ root@db:/$ mysql -u root -p
 ```
 #### Some utils MySql's commands:
 ```console
-mysql> show databases; --Show all databases
-mysql> use <database-name>; --Connect to a database
-mysql> show tables; --Show all tables from a database
+mysql> show databases; --Show all databases.
+mysql> use <database-name>; --Connect to a database.
+mysql> show tables; --Show all tables from a database.
+mysql> desc <table-name>; --Show de structure of a table. 
 ```
-
+#### Create Table DDL:
+```console
+create table tb_users (
+   id_user INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   nm_user VARCHAR(100) NOT NULL
+);
+```
 
 <hr>
 
