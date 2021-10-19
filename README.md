@@ -12,7 +12,7 @@ bscpaz@2am:/$ docker-compose up -d --build
 #### How to connect into database:
 ```console
 bscpaz@2am:/$ docker exec -it db bash
-root@db:/$ mysql -u root
+root@db:/$ mysql -u root -p
 ```
 
 
@@ -30,5 +30,6 @@ Solution:
 Issue: 
   "mysql -u root" generates "Access denied for user 'root'@'localhost' (using password: NO)"
 Solution: 
-  .
+  root@db:/$ mysql -u root -p
+  enter the root password
 ```
