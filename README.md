@@ -12,8 +12,10 @@
 ```console
 bscpaz@2am:/$ docker-compose up -d --build
 ```
+<hr>
+<h4 align="center">Database instructions</h4>
 
-#### How to connect into database:
+#### How to enter into database server:
 ```console
 bscpaz@2am:/$ docker exec -it db bash
 root@db:/$ mysql -u root -p
@@ -39,8 +41,21 @@ create table tb_users (
 INSERT INTO tb_users (nm_user) VALUES ('Bruno Paz');
 ```
 <hr>
+<h4 align="center">NodeJS instructions</h4>
 
-#### known issues:
+#### How to enter into nodeJS server:
+```console
+bscpaz@2am:/$ docker run -it --rm -p "3000:3000" -v $(pwd)/:/usr/src/app --name node node:17 bash
+```
+
+#### Some NodeJS's commands:
+##### In "/usr/src/app" directory
+
+```console
+root@node:/$ npm init --creates the package.json
+```
+<hr>
+<h4 align="center">Known issues</h4>
 
 ```
 Issue: 
