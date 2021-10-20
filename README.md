@@ -52,9 +52,10 @@ bscpaz@2am:/$ docker run -it --rm -p "4200:4200" -v $(pwd)/:/usr/src/app --name 
 ##### In "/usr/src/app" directory
 
 ```console
-root@node:/$ npm init --creates the package.json
-root@node:/$ npm install express --save --Install express
-root@node:/$ node index.js --Run a JS
+root@node:/$ npm init --creates the package.json.
+root@node:/$ npm install express --save --Install express.
+root@node:/$ npm install mysql --save --Install mySql client.
+root@node:/$ node index.js --Run a JS.
 ```
 <hr>
 <h4 align="center">Known issues</h4>
