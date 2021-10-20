@@ -45,7 +45,7 @@ INSERT INTO tb_users (nm_user) VALUES ('Bruno Paz');
 
 #### How to enter into nodeJS server:
 ```console
-bscpaz@2am:/$ docker run -it --rm -p "3000:3000" -v $(pwd)/:/usr/src/app --name node node:17 bash
+bscpaz@2am:/$ docker run -it --rm -p "4200:4200" -v $(pwd)/:/usr/src/app --name node node:17 bash
 ```
 
 #### Some NodeJS's commands:
