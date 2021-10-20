@@ -53,6 +53,7 @@ bscpaz@2am:/$ docker run -it --rm -p "3000:3000" -v $(pwd)/:/usr/src/app --name 
 
 ```console
 root@node:/$ npm init --creates the package.json
+root@node:/$ npm install express --save --Install express
 ```
 <hr>
 <h4 align="center">Known issues</h4>
