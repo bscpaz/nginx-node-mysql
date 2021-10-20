@@ -13,7 +13,7 @@
 bscpaz@2am:/$ docker-compose up -d --build
 ```
 <hr>
-<h4 align="center">Database instructions</h4>
+<h4 align="center">Database helper</h4>
 
 #### How to enter into database server:
 ```console
@@ -41,11 +41,11 @@ create table tb_users (
 INSERT INTO tb_users (nm_user) VALUES ('Bruno Paz');
 ```
 <hr>
-<h4 align="center">NodeJS instructions</h4>
+<h4 align="center">NodeJS helper</h4>
 
 #### How to enter into nodeJS server:
 ```console
-bscpaz@2am:/$ docker run -it --rm -p "4200:4200" -v $(pwd)/:/usr/src/app --name node node:17 bash
+bscpaz@2am:/$ docker run -it --rm -p "4200:4200" -v $(pwd)/:/usr/src/app --name app node:17 bash
 ```
 
 #### Some NodeJS's commands:
