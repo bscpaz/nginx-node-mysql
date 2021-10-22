@@ -12,9 +12,10 @@
 ```console
 bscpaz@2am:/$ docker-compose up -d --build
 ```
-
+##### Other utils commands:
 ```console
 bscpaz@2am:/$ docker-compose stop --stop all
+bscpaz@2am:/$ docker-compose up -d <container-name> --start just one container
 bscpaz@2am:/$ docker-compose stop <container-name> --stop only a image
 ```
 <hr>
