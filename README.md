@@ -63,6 +63,14 @@ root@node:/$ npm install express --save --Install express.
 root@node:/$ npm install mysql --save --Install mySql client.
 root@node:/$ node index.js --Run a JS.
 ```
+
+#### Using dockerize:
+##### See https://hub.docker.com/r/jwilder/dockerize
+
+```console
+root@node:/$ dockerize -wait tcp://db:3306 -timeout 10s
+```
+
 <hr>
 <h4 align="center">Known issues</h4>
 
