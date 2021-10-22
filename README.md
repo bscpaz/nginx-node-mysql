@@ -12,6 +12,11 @@
 ```console
 bscpaz@2am:/$ docker-compose up -d --build
 ```
+
+```console
+bscpaz@2am:/$ docker-compose stop --stop all
+bscpaz@2am:/$ docker-compose stop <container-name> --stop only a image
+```
 <hr>
 <h4 align="center">Database helper</h4>
 
