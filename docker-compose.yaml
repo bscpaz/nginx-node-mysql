@@ -1,0 +1,55 @@
+version: "3"
+
+services:
+
+  db:
+    build:
+      context: ./mysql
+      dockerfile: Dockerfile
+    image: bscpaz/mysql-db
+    command: --innodb-use-native-aio=0
+    container_name: db
+    restart: always
+    tty: true
+    volumes: 
+      - /home/bscpaz/volume/mysql-5.7.36:/var/lib/mysql
+    env_file:
+      - ./mysql/mysql.env #It contains "MYSQL_DATABASE" and "MYSQL_ROOT_PASSWORD" environment variables
+    networks:
+      - services-net
+
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    image: bscpaz/node
+    container_name: app
+    entrypoint: dockerize -wait tcp://db:3306 -timeout 10s docker-entrypoint.sh
+    command: node index.js
+    tty: true
+    volumes:
+      - ./app:/usr/src/app
+    networks:
+        - services-net
+    depends_on:
+      - db
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    image: bscpaz/nginx-node
+    container_name: nginx
+    entrypoint: dockerize -wait tcp://app:4200 -timeout 10s /docker-entrypoint.sh
+    command: nginx -g "daemon off";
+    ports:
+      - "8080:80"
+    networks:
+      - services-net
+    depends_on:
+      - app
+      
+networks:
+  services-net:
+    driver: bridge
+
